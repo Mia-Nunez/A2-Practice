@@ -31,4 +31,19 @@ export const BookEdit = () => (
     </Edit>
 );
 
+export const BookCreate = () => (
+    <Create>
+        <SimpleForm>
+            <NumberInput source="BOOK_ISBN" />
+            <TextInput source="id" />
+            <DateInput source="BOOK_DATE" />
+            <TextInput source="BOOK_NAME" />
+            <NumberInput source="BOOK_EDITION" />
+            <TextInput source="BOOK_STATUS" />
+            <NumberInput source="PUB_ID" />
+        </SimpleForm>
+    </Create>
+);
+
+
 // Create, copy the list and change names that have list to create, add to import in index.jsx and in the resoiurce. 

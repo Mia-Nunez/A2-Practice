@@ -1,11 +1,11 @@
 // in src/admin/index.tsx
 import { Admin, Resource, ListGuesser, EditGuesser } from "react-admin";
 import {createTrailbaseProvider} from "/workspaces/A2-Practice/my-admin/ra-trailbase.js";
-import { BookEdit, BookList } from "./assets/Tables/BOOK";
-import { OrderEdit, OrderList } from "./assets/Tables/ORDERS";
-import { PublisherEdit, PublisherList } from "./assets/Tables/PUBLISHER";
-import { RequestEdit, RequestList } from "./assets/Tables/REQUEST";
-import { StudentEdit, StudentList } from "./assets/Tables/STUDENT";
+import { BookEdit, BookList, BookCreate} from "./assets/Tables/BOOK";
+import { OrderEdit, OrderList, OrderCreate } from "./assets/Tables/ORDERS";
+import { PublisherEdit, PublisherList, PublisherCreate } from "./assets/Tables/PUBLISHER";
+import { RequestEdit, RequestList, RequestCreate } from "./assets/Tables/REQUEST";
+import { StudentEdit, StudentList, StudentCreate } from "./assets/Tables/STUDENT";
 
 const TRAILBASE_URL = "https://refactored-happiness-x59qj7xpwxv43694j-4000.app.github.dev/" // enter link from Ale
 const {dataProvider, authProvider} = await createTrailbaseProvider(TRAILBASE_URL);

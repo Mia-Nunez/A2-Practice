@@ -1,4 +1,4 @@
-import { DataTable, DateField, List } from 'react-admin';
+import { DataTable, DateField, List, Create } from 'react-admin';
 import { DateInput, Edit, NumberInput, SimpleForm, TextInput } from 'react-admin';
 
 export const OrderList = () => (
@@ -25,4 +25,16 @@ export const OrderEdit = () => (
             <NumberInput source="BOOK_ISBN" />
         </SimpleForm>
     </Edit>
+);
+
+export const OrderCreate = () => (
+    <Create>
+        <SimpleForm>
+            <NumberInput source="ORD_NUM" />
+            <TextInput source="id" />
+            <DateInput source="ORD_DATE" />
+            <NumberInput source="ORD_QUANTITY" />
+            <NumberInput source="BOOK_ISBN" />
+        </SimpleForm>
+    </Create>
 );

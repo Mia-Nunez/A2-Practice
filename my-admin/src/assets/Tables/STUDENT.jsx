@@ -1,4 +1,4 @@
-import { DataTable, List } from 'react-admin';
+import { DataTable, List, Create } from 'react-admin';
 import { Edit, NumberInput, SimpleForm, TextInput } from 'react-admin';
 
 export const StudentList = () => (
@@ -25,4 +25,17 @@ export const StudentEdit = () => (
             <TextInput source="STU_ADDRESS" />
         </SimpleForm>
     </Edit>
+);
+
+export const StudentCreate = () => (
+    <Create>
+        <SimpleForm>
+            <NumberInput source="STU_NUM" />
+            <TextInput source="id" />
+            <TextInput source="STU_NAME" />
+            <TextInput source="STU_LNAME" />
+            <TextInput source="STU_TELNUM" />
+            <TextInput source="STU_ADDRESS" />
+        </SimpleForm>
+    </Create>
 );
