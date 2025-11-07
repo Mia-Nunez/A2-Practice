@@ -30,3 +30,5 @@ export const BookEdit = () => (
         </SimpleForm>
     </Edit>
 );
+
+// Create, copy the list and change names that have list to create, add to import in index.jsx and in the resoiurce. 
