@@ -5,7 +5,7 @@ export const BookList = () => (
     <List>
         <DataTable>
             <DataTable.NumberCol source="BOOK_ISBN" />
-            <DataTable.Col source="id" />
+            {/*<DataTable.Col source="id" /> */}
             <DataTable.Col source="BOOK_DATE">
                 <DateField source="BOOK_DATE" />
             </DataTable.Col>
@@ -21,7 +21,7 @@ export const BookEdit = () => (
     <Edit>
         <SimpleForm>
             <NumberInput source="BOOK_ISBN" />
-            <TextInput source="id" />
+            {/* <TextInput source="id" />*/}
             <DateInput source="BOOK_DATE" />
             <TextInput source="BOOK_NAME" />
             <NumberInput source="BOOK_EDITION" />

@@ -5,7 +5,7 @@ export const OrderList = () => (
     <List>
         <DataTable>
             <DataTable.NumberCol source="ORD_NUM" />
-            <DataTable.Col source="id" />
+            {/* <DataTable.Col source="id" /> */}
             <DataTable.Col source="ORD_DATE">
                 <DateField source="ORD_DATE" />
             </DataTable.Col>
@@ -19,7 +19,7 @@ export const OrderEdit = () => (
     <Edit>
         <SimpleForm>
             <NumberInput source="ORD_NUM" />
-            <TextInput source="id" />
+            {/*<TextInput source="id" />*/}
             <DateInput source="ORD_DATE" />
             <NumberInput source="ORD_QUANTITY" />
             <NumberInput source="BOOK_ISBN" />

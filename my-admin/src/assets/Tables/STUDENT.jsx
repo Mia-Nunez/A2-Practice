@@ -5,7 +5,7 @@ export const StudentList = () => (
     <List>
         <DataTable>
             <DataTable.NumberCol source="STU_NUM" />
-            <DataTable.Col source="id" />
+            {/*<DataTable.Col source="id" /> */}
             <DataTable.Col source="STU_NAME" />
             <DataTable.Col source="STU_LNAME" />
             <DataTable.Col source="STU_TELNUM" />
@@ -18,7 +18,7 @@ export const StudentEdit = () => (
     <Edit>
         <SimpleForm>
             <NumberInput source="STU_NUM" />
-            <TextInput source="id" />
+            {/*<TextInput source="id" /> */}
             <TextInput source="STU_NAME" />
             <TextInput source="STU_LNAME" />
             <TextInput source="STU_TELNUM" />
