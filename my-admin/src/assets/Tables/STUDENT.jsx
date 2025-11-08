@@ -31,7 +31,7 @@ export const StudentCreate = () => (
     <Create>
         <SimpleForm>
             <NumberInput source="STU_NUM" />
-            <TextInput source="id" />
+            {/*<TextInput source="id" />*/}
             <TextInput source="STU_NAME" />
             <TextInput source="STU_LNAME" />
             <TextInput source="STU_TELNUM" />

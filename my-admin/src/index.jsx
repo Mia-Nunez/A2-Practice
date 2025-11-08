@@ -12,12 +12,12 @@ const {dataProvider, authProvider} = await createTrailbaseProvider(TRAILBASE_URL
 
 const App = () => (
   <Admin dataProvider={dataProvider} authProvider={authProvider}>
-    <Resource name="BOOK" list={BookList} edit={BookEdit}/>
+    <Resource name="BOOK" list={BookList} edit={BookEdit} create={BookCreate}/>
     {/*<Resource name="BOOK_REQUEST" list={} edit={EditGuesser} /> */}
-    <Resource name="ORDERS" list={OrderList} edit={OrderEdit}/>
-    <Resource name="PUBLISHER" list={PublisherList} edit={PublisherEdit}/>
-    <Resource name="REQUEST" list={RequestList} edit={RequestEdit}/>
-    <Resource name="STUDENT" list={StudentList} edit={StudentEdit}/>
+    <Resource name="ORDERS" list={OrderList} edit={OrderEdit} create={OrderCreate}/>
+    <Resource name="PUBLISHER" list={PublisherList} edit={PublisherEdit} create={PublisherCreate}/>
+    <Resource name="REQUEST" list={RequestList} edit={RequestEdit} create = {RequestCreate}/>
+    <Resource name="STUDENT" list={StudentList} edit={StudentEdit} create = {StudentCreate}/>
   </Admin>
 );
 

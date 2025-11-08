@@ -29,7 +29,7 @@ export const PublisherCreate = () => (
     <Create>
         <SimpleForm>
             <NumberInput source="PUB_ID" />
-            <TextInput source="id" />
+            {/*<TextInput source="id" />*/}
             <TextInput source="PUB_NAME" />
             <TextInput source="PUB_TELNUM" />
             <TextInput source="PUB_ADDRESS" />

@@ -31,7 +31,7 @@ export const OrderCreate = () => (
     <Create>
         <SimpleForm>
             <NumberInput source="ORD_NUM" />
-            <TextInput source="id" />
+            {/*<TextInput source="id" />*/}
             <DateInput source="ORD_DATE" />
             <NumberInput source="ORD_QUANTITY" />
             <NumberInput source="BOOK_ISBN" />

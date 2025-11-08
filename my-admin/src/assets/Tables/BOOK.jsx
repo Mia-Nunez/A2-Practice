@@ -35,7 +35,7 @@ export const BookCreate = () => (
     <Create>
         <SimpleForm>
             <NumberInput source="BOOK_ISBN" />
-            <TextInput source="id" />
+            {/* <TextInput source="id" />*/}
             <DateInput source="BOOK_DATE" />
             <TextInput source="BOOK_NAME" />
             <NumberInput source="BOOK_EDITION" />

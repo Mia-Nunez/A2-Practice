@@ -37,7 +37,7 @@ export const RequestCreate = () => (
     <Create>
         <SimpleForm>
             <NumberInput source="REQ_NUM" />
-            <TextInput source="id" />
+            {/*<TextInput source="id" /> */}
             <DateInput source="REQ_DATE" />
             <DateInput source="REQ_STARTDATE" />
             <DateInput source="REQ_ENDDATE" />
