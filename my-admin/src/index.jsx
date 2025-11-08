@@ -1,5 +1,5 @@
 // in src/admin/index.tsx
-import { Admin, Resource, ListGuesser, EditGuesser } from "react-admin";
+import { Admin, Resource, ListGuesser, EditGuesser, radiantLightTheme } from "react-admin";
 import {createTrailbaseProvider} from "/workspaces/A2-Practice/my-admin/ra-trailbase.js";
 import { BookEdit, BookList, BookCreate} from "./assets/Tables/BOOK";
 import { OrderEdit, OrderList, OrderCreate } from "./assets/Tables/ORDERS";
@@ -11,7 +11,7 @@ const TRAILBASE_URL = "https://refactored-happiness-x59qj7xpwxv43694j-4000.app.g
 const {dataProvider, authProvider} = await createTrailbaseProvider(TRAILBASE_URL);
 
 const App = () => (
-  <Admin dataProvider={dataProvider} authProvider={authProvider}>
+  <Admin dataProvider={dataProvider} authProvider={authProvider} theme={radiantLightTheme}>
     <Resource name="BOOK" list={BookList} edit={BookEdit} create={BookCreate}/>
     {/*<Resource name="BOOK_REQUEST" list={} edit={EditGuesser} /> */}
     <Resource name="ORDERS" list={OrderList} edit={OrderEdit} create={OrderCreate}/>

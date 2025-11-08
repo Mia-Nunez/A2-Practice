@@ -12,7 +12,7 @@ export const BookList = () => (
             <DataTable.Col source="BOOK_NAME" />
             <DataTable.NumberCol source="BOOK_EDITION" />
             <DataTable.Col source="BOOK_STATUS" />
-            <DataTable.NumberCol source="PUB_ID" />
+            {/*<DataTable.NumberCol source="PUB_ID" /> */}
         </DataTable>
     </List>
 );
