@@ -1,5 +1,20 @@
 import { DataTable, List, Create } from 'react-admin';
 import { Edit, NumberInput, SimpleForm, TextInput } from 'react-admin';
+import { NumberField, Show, SimpleShowLayout, TextField } from 'react-admin';
+
+export const StudentShow = () => (
+    <Show>
+        <SimpleShowLayout>
+            <NumberField source="STU_NUM" />
+            <TextField source="id" />
+            <TextField source="STU_NAME" />
+            <TextField source="STU_LNAME" />
+            <TextField source="STU_TELNUM" />
+            <TextField source="STU_ADDRESS" />
+        </SimpleShowLayout>
+    </Show>
+);
+
 
 export const StudentList = () => (
     <List>
